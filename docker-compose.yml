@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  ai_news_agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # Monte diretórios de dados para persistência
+      - ./data:/app/data
+    environment:
+      # Variáveis de ambiente (personalize conforme necessário)
+      - OLLAMA_HOST=http://localhost
+      - OLLAMA_PORT=11434
+    ports:
+      # Exponha portas se necessário para APIs
+      - "8000:8000"
+    # Comando personalizado (opcional)
+    # command: python main.py --step all

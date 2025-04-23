@@ -1,4 +1,34 @@
-venv/
+# Arquivos e diretórios específicos do Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.env
 *.log
+
+# Diretórios de dados
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/processed/insights/.gitkeep
+!data/processed/visualizations/.gitkeep
+
+# Arquivos específicos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos de cache
+.pytest_cache/
+.coverage
+htmlcov/

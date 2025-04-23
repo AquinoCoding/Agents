@@ -1,0 +1,11 @@
+requests==2.32.3
+beautifulsoup4==4.13.4
+pandas==2.2.3
+nltk==3.9.1
+transformers==4.51.3
+tqdm==4.67.1
+ollama==0.4.8
+tweepy==4.15.0
+instaloader==4.14.1
+matplotlib==3.8.3
+seaborn==0.13.2
